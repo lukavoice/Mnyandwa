@@ -431,7 +431,7 @@ async function loadSession() {
         }
 
         if (!b64Check.startsWith('H4sI')) {
-            const serverUrl = `https://session.giftedtech.co.ke/session/${b64Check}`;
+            const serverUrl = `https://lukapair.onrender.com/pair/${b64Check}`;
             const res = await axios.get(serverUrl, { timeout: 15000 });
             const fetched = (res.data || '').toString().trim();
             if (!fetched.startsWith('LUKA~H4sI')) {
